@@ -44,4 +44,4 @@ The entire UI lives in a single `App.tsx` with co-located components and CSS. De
 
 ## Author
 
-Built by **Nisha**.
+Built by **Nishant**.
