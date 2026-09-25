@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #17201d;
+  background: #f5f7f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, textarea, a { font: inherit; }
+button, a { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--lime); outline-offset: 2px; border-radius: 2px; }
+.login-button { transition: opacity .2s ease, transform .2s ease; }
+.login-button:disabled { cursor: wait; opacity: .78; }
+.login-spinner { animation: login-spin .8s linear infinite; }
+@keyframes login-spin { to { transform: rotate(360deg); } }
+.login-panel { animation: login-fade .45s ease both; }
+.app-main { animation: login-fade .45s ease both; }
+@keyframes login-fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.chart-area > i { position: absolute; inset: 20px 0 27px; display: block; background: #72b287; clip-path: polygon(0 72%, 12% 61%, 25% 68%, 38% 46%, 50% 53%, 62% 31%, 75% 39%, 88% 15%, 100% 22%, 100% 28%, 88% 21%, 75% 45%, 62% 37%, 50% 59%, 38% 52%, 25% 74%, 12% 67%, 0 78%); }
+.chart-area > b { position: absolute; inset: 25px 0 27px; display: block; background: linear-gradient(180deg, #bfe2c670, transparent); clip-path: polygon(0 72%, 12% 61%, 25% 68%, 38% 46%, 50% 53%, 62% 31%, 75% 39%, 88% 15%, 100% 22%, 100% 100%, 0 100%); }
+.signal-stat > i { display: block; height: 6px; background: #e9eee9; border-radius: 4px; }
+.signal-stat > i b { display: block; height: 100%; background: #78b983; border-radius: 4px; }
+.signal-stat > i.amber-progress b { background: #e3ae51; }
+.signal-stat > i.blue-progress b { background: #6faac2; }
+
