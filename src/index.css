@@ -28,4 +28,7 @@ button, a { cursor: pointer; }
 .signal-stat > i b { display: block; height: 100%; background: #78b983; border-radius: 4px; }
 .signal-stat > i.amber-progress b { background: #e3ae51; }
 .signal-stat > i.blue-progress b { background: #6faac2; }
-
+@media (max-width: 600px) {
+  .sidebar { display: flex !important; }
+  .app-main { width: calc(100% - 70px) !important; }
+}
